@@ -1,0 +1,7 @@
+<form method="POST" action="{% url 'teacher_change' form.instance.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button type="submit" name="edit">Рудагувати</button>
+		<button type="submit" name="delete">Видалити</button>
+
+</form>
