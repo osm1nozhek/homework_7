@@ -1,9 +1,0 @@
-<ul>
-    Список занесених до бази груп
-{% for group in groups %}
-
-    <li>{{ group.name }}</li>
-{% empty %}
-    <li>Немає груп у базі даних.</li>
-{% endfor %}
-</ul>
