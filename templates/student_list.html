@@ -1,7 +1,7 @@
 <ul>
     Список занесених до бази студентів
-{% for teacher in teachers %}
-    <li>{{ student.first_name }} ({{ student.last_name }} </li>
+{% for student in students %}
+    <li>{{ student.first_name }}, {{ student.last_name }} </li>
 {% empty %}
     <li>Немає студентів у базі даних.</li>
 {% endfor %}

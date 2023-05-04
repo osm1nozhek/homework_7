@@ -76,8 +76,8 @@ def student_edit_delete(request, id: int):
 
 
 def student_list(request):
-    student = Student.objects.all()
-    return render(request, "student_list.html", {"student": student})
+    students = Student.objects.all()
+    return render(request, "student_list.html", {"students": students})
 
 
 def add_group(request):

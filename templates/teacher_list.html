@@ -1,7 +1,7 @@
 <ul>
     Список занесених до бази вчителів
 {% for teacher in teachers %}
-    <li>{{ teacher.name }} ,{{ teacher.subjects }}</li>
+    <li>{{ teacher.name }}</li>
 {% empty %}
     <li>Немає вчителів у базі даних.</li>
 {% endfor %}

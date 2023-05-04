@@ -5,7 +5,7 @@ from .models import Teacher, Group, Student
 class TeacherForm(forms.ModelForm):
     class Meta:
         model = Teacher
-        fields = ["name", "group"]
+        fields = ["name", "subject"]
 
 
 class StudentForm(forms.ModelForm):
@@ -17,7 +17,7 @@ class StudentForm(forms.ModelForm):
 class GroupForm(forms.ModelForm):
     class Meta:
         model = Group
-        fields = ["name"]
+        fields = ["name", "teacher"]
 
 
 class AddStudentToGroupForm(forms.Form):
