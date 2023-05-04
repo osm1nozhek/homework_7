@@ -1,4 +1,4 @@
-from django.http import  HttpResponseRedirect
+from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 from django.shortcuts import render
@@ -85,9 +85,7 @@ def add_group(request):
         form = GroupForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(
-                reverse("add_group")
-            )
+            return HttpResponseRedirect(reverse("add_group"))
     else:
         form = GroupForm()
         return render(request, "group_form.html", {"form": form})
