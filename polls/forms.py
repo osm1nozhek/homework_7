@@ -11,13 +11,13 @@ class TeacherForm(forms.ModelForm):
 class StudentForm(forms.ModelForm):
     class Meta:
         model = Student
-        fields = ["first_name", "last_name", "group"]
+        fields = ["first_name", "last_name"]
 
 
 class GroupForm(forms.ModelForm):
     class Meta:
         model = Group
-        fields = ["name", "teacher"]
+        fields = ["name", "teacher", "student"]
 
 
 class AddStudentToGroupForm(forms.Form):
