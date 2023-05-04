@@ -81,7 +81,7 @@ def student_list(request):
 
 
 def add_group(request):
-    if request.method == "GET":
+    if request.method == "POST":
         form = GroupForm(request.POST)
         if form.is_valid():
             form.save()
