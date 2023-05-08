@@ -13,10 +13,14 @@ class ResultMiddleware:
         end_time = time.time()
         execution_time = end_time - start_time
         print("gfg")
-        with open('result.txt', 'a') as f:
-            f.write(f"Path: {request.path}, Method: {request.method}, Time: {execution_time}\n")
+        with open("result.txt", "a") as f:
+            f.write(
+                f"Path: {request.path}, Method: {request.method}, Time: {execution_time}\n"
+            )
 
-        result = Result(path=request.path, method=request.method, execution_time=execution_time)
+        result = Result(
+            path=request.path, method=request.method, execution_time=execution_time
+        )
         result.save()
 
         return response

@@ -19,16 +19,17 @@ class StudentForm(forms.ModelForm):
     def clean_number(self):
         phone_raw = self.cleaned_data["number"]
         try:
-            phone=phonenumbers.parse(phone_raw,None)
+            phone = phonenumbers.parse(phone_raw, None)
         except phonenumbers.NumberParseException:
             raise ValidationError("Phone is invalid")
         if not phonenumbers.is_valid_number(phone):
             raise ValidationError("Phone is invalid")
-        return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL)
+        return phonenumbers.format_number(
+            phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL
+        )
+
+
 class GroupForm(forms.ModelForm):
     class Meta:
         model = Group
         fields = ["name", "teacher", "student"]
-
-
-
