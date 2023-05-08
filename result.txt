@@ -1,0 +1,12 @@
+Path: /, Method: GET, Time: 0.01595449447631836
+Path: /polls/student/, Method: GET, Time: 0.043924570083618164
+Path: /polls/student/, Method: POST, Time: 0.027968645095825195
+Path: /polls/student_edit_delete/4, Method: GET, Time: 0.014360666275024414
+Path: /, Method: GET, Time: 0.015987396240234375
+Path: /polls/student/, Method: GET, Time: 0.04983973503112793
+Path: /polls/student/, Method: POST, Time: 0.026926517486572266
+Path: /polls/student_edit_delete/5, Method: GET, Time: 0.01496577262878418
+Path: /, Method: GET, Time: 0.025931119918823242
+Path: /polls/teacher/, Method: GET, Time: 0.015943527221679688
+Path: /polls/teacher/, Method: POST, Time: 0.01595616340637207
+Path: /polls/teacher_edit_delete/2, Method: GET, Time: 0.012954950332641602
